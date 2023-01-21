@@ -23,14 +23,6 @@ public class CarDao {
         if (count <= 5) {
             return carList.subList(0, count);
         }
-
-
-//            List<Car> newList = new ArrayList<>();
-//            for (int i = 0; i < count; i++) {
-//                newList.add(carList.get(i));
-//            }
-//            return newList;
-//        }
         return carList;
     }
 
