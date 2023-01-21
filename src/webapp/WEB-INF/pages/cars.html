@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>List of all cars</title>
+</head>
+<body>
+<p><font size = "1" face = "Courier New">
+<div>
+  <th:block th:each="car : ${cars}">
+    <h1 th:text="${car.getModel()}"></h1>
+    <h1 th:text="${car.getSeries()}"></h1>
+    <h1 th:text="${car.getVinNumber()}"></h1>
+  </th:block>
+</div>
+</p></font>
+</body>
+</html>
